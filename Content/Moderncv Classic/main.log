@@ -1,0 +1,475 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdftex 2016.12.12)  12 DEC 2016 10:55
+entering extended mode
+**./main.tex
+(main.tex
+! Undefined control sequence.
+l.9 \documentclass
+                  [12pt,a4paper,sans]{moderncv}        % possible options in...
+
+? 
+! Undefined control sequence.
+l.12 \moderncvstyle
+                   {classic}                             % style options are...
+
+? 
+! Undefined control sequence.
+l.13 \moderncvcolor
+                   {orange}                               % color options 'b...
+
+? 
+! Undefined control sequence.
+l.18 \usepackage
+                [utf8]{inputenc}                        % if you are not usi...
+
+? 
+! Undefined control sequence.
+l.22 \usepackage
+                [scale=0.75]{geometry}
+? 
+! Undefined control sequence.
+l.29 \name
+          {Matthew}{Kingon}
+? 
+! Undefined control sequence.
+l.30 \title
+           {Curriculum Vitae}                            % optional, remove ...
+
+? 
+! Undefined control sequence.
+l.31 \address
+             {3 St Aidens}{Grahamstown}{South Africa}	% optional, remove / c...
+
+? 
+! Undefined control sequence.
+l.32 \phone
+           [mobile]{~071~892~1092}               		% optional, remove / comm...
+
+? 
+! Undefined control sequence.
+l.33 \phone
+           [fixed] {(next of kin)~021~558~6130}          % optional, remove ...
+
+? 
+! Undefined control sequence.
+l.34 \email
+           {matshaki@gmail.com}                  		% optional, remove / comm...
+
+? 
+! Undefined control sequence.
+l.36 \extrainfo
+               {University Graduate}                		% optional, remove / c...
+
+? 
+! Undefined control sequence.
+l.37 \photo
+           [64pt][0.4pt]{picture}               			% optional, remove / comm...
+
+? 
+! Undefined control sequence.
+l.38 \quote
+           {"The joy of a problem is in finding the solution."}    % optiona...
+
+? 
+! Undefined control sequence.
+l.52 \begin
+           {document}
+? 
+! Undefined control sequence.
+l.55 \makecvtitle
+                 
+? 
+! Undefined control sequence.
+l.57 \section
+             {Education}
+? 
+! Undefined control sequence.
+l.58 \cventry
+             {2015--2016}{(Current Occupation) HONS}	{Rhodes University}			{...
+
+? 
+! Undefined control sequence.
+l.58 ...Rhodes University}			{Grahamstown}{\textit
+                                                  {}}{Computer Science}
+? 
+! Undefined control sequence.
+l.59 \cventry
+             {2012--2015}{BSC}						{Rhodes University} 		{Grahamstown}{\tex...
+
+? 
+! Undefined control sequence.
+l.59 ...Rhodes University} 		{Grahamstown}{\textit
+                                                  {}}{MAJORS: Computer Scien...
+
+? 
+! Undefined control sequence.
+l.60 \cventry
+             {2005--2011}{HIGHSCHOOL}				{Edgemead High School}		{Cape Town}...
+
+? 
+! Undefined control sequence.
+l.60 ...Edgemead High School}		{Cape Town}{\textit
+                                                  {}}	{SUBJECTS: English, Af...
+
+? 
+! Undefined control sequence.
+l.60 ..., Mathematics, Physics, Geography,\newline
+                                                  {}
+? 
+! Undefined control sequence.
+l.62 \cventry
+             {1998--2005}{PRIMARY}					{Edgemead Primary School}	{Cape Town}...
+
+? 
+! Undefined control sequence.
+l.62 ...gemead Primary School}	{Cape Town}{\textit
+                                                  {}}	{}  % arguments 3 to 6...
+
+? 
+
+Overfull \hbox (53.55055pt too wide) in paragraph at lines 57--63
+\tenrm 2012--2015BSC Rhodes Uni-ver-sity Gra-ham-stown-MA-JORS: Com-puter Sci-e
+nce (74), Maths (69) 2005--2011HIGHSCHOOL|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tenrm 2
+.\tenrm 0
+.\tenrm 1
+.\tenrm 2
+.\tenrm { (ligature --)
+.etc.
+
+! Undefined control sequence.
+l.64 \section
+             {Honours: Thesis}
+? 
+! Undefined control sequence.
+l.65 \cvitem
+            {title}{\emph{Facial Recognition Workstation with Example} }
+? 
+! Undefined control sequence.
+l.65 \cvitem{title}{\emph
+                         {Facial Recognition Workstation with Example} }
+? 
+! Undefined control sequence.
+l.66 \cvitem
+            {supervisor} {Prof. P. Wentworth}
+? 
+! Undefined control sequence.
+l.67 \cvitem
+            {description}{Creation of a simple to extend facial recognition ...
+
+? 
+! Undefined control sequence.
+l.67 ...ial recognition workstation to aid\newline
+                                                  {}
+? 
+! Undefined control sequence.
+l.68 ...f new recognition or normalization\newline
+                                                  {}
+? 
+! Undefined control sequence.
+l.71 \section
+             {Honours: Course work}
+? 
+! Undefined control sequence.
+l.72 \subsection
+                {Modules: (Complete)}
+? 
+! Undefined control sequence.
+l.73 \cvitemwithcomment
+                       {}{\hspace*{10 mm}-Computer Interfacing (I)} 			{73.1...
+
+? 
+! Undefined control sequence.
+l.73 \cvitemwithcomment{}{\hspace
+                                 *{10 mm}-Computer Interfacing (I)} 			{73.1...
+
+? 
+! Undefined control sequence.
+l.74 \cvitemwithcomment
+                       {}{\hspace*{10 mm}-Image Processing} 					{65.3/100}
+? 
+! Undefined control sequence.
+l.74 \cvitemwithcomment{}{\hspace
+                                 *{10 mm}-Image Processing} 					{65.3/100}
+? 
+! Undefined control sequence.
+l.75 \cvitemwithcomment
+                       {}{\hspace*{10 mm}-Real Time Multimedia} 				{65.5/100}
+? 
+! Undefined control sequence.
+l.75 \cvitemwithcomment{}{\hspace
+                                 *{10 mm}-Real Time Multimedia} 				{65.5/100}
+? 
+! Undefined control sequence.
+l.77 \subsection
+                {Modules: (To Complete by end November 2015)}
+? 
+! Undefined control sequence.
+l.78 \cvitemwithcomment
+                       {}{\hspace*{10 mm}-Computer Interfacing (II)} 		{}
+? 
+! Undefined control sequence.
+l.78 \cvitemwithcomment{}{\hspace
+                                 *{10 mm}-Computer Interfacing (II)} 		{}
+? 
+! Undefined control sequence.
+l.79 \cvitemwithcomment
+                       {}{\hspace*{10 mm}-Mobile Technologies}				{}
+? 
+! Undefined control sequence.
+l.79 \cvitemwithcomment{}{\hspace
+                                 *{10 mm}-Mobile Technologies}				{}
+? 
+! Undefined control sequence.
+l.80 \cvitemwithcomment
+                       {}{\hspace*{10 mm}-General Programming on the GPU} 	{}
+? 
+! Undefined control sequence.
+l.80 \cvitemwithcomment{}{\hspace
+                                 *{10 mm}-General Programming on the GPU} 	{}
+? 
+! Undefined control sequence.
+l.82 \section
+             {Experience}
+? 
+! Undefined control sequence.
+l.83 \subsection
+                {Vocational}
+? 
+! Undefined control sequence.
+l.84 \cventry
+             {2011--2012}{Shop Assistant}{Video 2000}{Cape Town}{}{check-out...
+
+? 
+! Undefined control sequence.
+l.84 ...id customers to the local database\newline
+                                                  {}
+? 
+! Undefined control sequence.
+l.85 ...s back on shelves.  Handling calls\newline
+                                                  {}
+? 
+! Undefined control sequence.
+l.86 ...equest safe return of rented DVD's\newline
+                                                  {}%
+? 
+! Undefined control sequence.
+l.105 \cventry
+              {2013--2016}{Tutor}{Rhodes University}{Grahamstown}{}{Help stu...
+
+? 
+! Undefined control sequence.
+l.105 ...hem by their lecturers each week.\newline
+                                                  {}
+? 
+! Undefined control sequence.
+l.110 \section
+              {Languages}
+? 
+! Undefined control sequence.
+l.111 \subsection
+                 {Spoken}
+? 
+! Undefined control sequence.
+l.112 \cvitemwithcomment
+                        {English}		{Fluent}	 	{(First language)}
+? 
+! Undefined control sequence.
+l.113 \cvitemwithcomment
+                        {Afrikaans}	{Some}	 		{(Second Language)}
+? 
+! Undefined control sequence.
+l.115 \subsection
+                 {Written}
+? 
+! Undefined control sequence.
+l.116 \cvitemwithcomment
+                        {English}		{Acceptable}	{(First language)}
+? 
+! Undefined control sequence.
+l.117 \cvitemwithcomment
+                        {Afrikaans}	{None}	 		{(Second Language)}
+? 
+! Undefined control sequence.
+l.119 \section
+              {Coding Languages: General}
+? 
+! Undefined control sequence.
+l.120 \cvitemwithcomment
+                        {Python}		{High}	{}
+? 
+! Undefined control sequence.
+l.121 \cvitemwithcomment
+                        {C Sharp}		{High}	{(Primary University languages)}
+? 
+! Undefined control sequence.
+l.122 \cvitemwithcomment
+                        {Java}		{High}	{}
+? 
+! Undefined control sequence.
+l.123 \cvitemwithcomment
+                        {C}			{Medium}{}
+? 
+! Undefined control sequence.
+l.124 \cvitemwithcomment
+                        {C++}			{Medium}{(module specific languages over the...
+
+? 
+! Undefined control sequence.
+l.125 \cvitemwithcomment
+                        {F Sharp}		{Medium}{}
+? 
+! Undefined control sequence.
+l.127 \section
+              {Coding Languages: Specialised}
+? 
+! Undefined control sequence.
+l.128 \cvitemwithcomment
+                        {LaTeX}		{High}	{}
+? 
+! Undefined control sequence.
+l.129 \cvitemwithcomment
+                        {CUDA c}		{Medium}{(Once off module languages that I...
+
+? 
+! Undefined control sequence.
+l.130 \cvitemwithcomment
+                        {Android SDK}	{Medium}{ maintained in my free time)}
+? 
+! Undefined control sequence.
+l.131 \cvitemwithcomment
+                        {Assembler}	{low}	{}
+? 
+! Undefined control sequence.
+l.133 \pagebreak
+                
+? 
+! Undefined control sequence.
+l.135 \section
+              {Skills}
+? 
+! Undefined control sequence.
+l.136 \subsection
+                 {Licenses}
+? 
+! Undefined control sequence.
+l.137 \cvitemwithcomment
+                        {Drivers}							{Obtained}		{}
+? 
+! Undefined control sequence.
+l.138 \cvitemwithcomment
+                        {Private Pilots License (PPL)}	{Expired}		{}
+? 
+! Undefined control sequence.
+l.140 \subsection
+                 {Working under various Operating systems}
+? 
+! Undefined control sequence.
+l.141 \cvitemwithcomment
+                        {Windows}			{High}		{}
+? 
+! Undefined control sequence.
+l.142 \cvitemwithcomment
+                        {Ubuntu}			{Medium}	{}
+? 
+! Undefined control sequence.
+l.143 \cvitemwithcomment
+                        {Mac}				{None}		{}
+? 
+! Undefined control sequence.
+l.144 \cvitemwithcomment
+                        {Linux Terminal}	{Medium}	{}
+? 
+! Undefined control sequence.
+l.145 \cvitemwithcomment
+                        {Windows Terminal}{Medium}	{}
+? 
+! Undefined control sequence.
+l.147 \subsection
+                 {Working with Databases}
+? 
+! Undefined control sequence.
+l.148 \cvitemwithcomment
+                        {SQLite}			{Medium}	{}
+? 
+! Undefined control sequence.
+l.149 \cvitemwithcomment
+                        {Postgress}		{Medium}	{}
+? 
+! Undefined control sequence.
+l.151 \subsection
+                 {Working in Web Development}
+? 
+! Undefined control sequence.
+l.152 \cvitemwithcomment
+                        {-}				{low}		{}
+? 
+! Undefined control sequence.
+l.154 \subsection
+                 {Other skills}
+? 
+! Undefined control sequence.
+l.155 \cvlistitem
+                 {I have built and upgraded various PC rigs over the years.}
+? 
+! Undefined control sequence.
+l.157 \section
+              {Interests}
+? 
+! Undefined control sequence.
+l.158 \cvitem
+             {PC Gaming}		{Playing and Modding PC Games }
+? 
+! Undefined control sequence.
+l.159 \cvitem
+             {Model building}	{Building and painting miniatures }
+? 
+! Undefined control sequence.
+l.160 \cvitem
+             {Flying}			{(However due to medical conditions beyond my contro...
+
+? 
+! Undefined control sequence.
+l.161 \cvitem
+             {Reading}		{Somewhat slowed down in this hobby}
+? 
+! Undefined control sequence.
+l.163 \section
+              {Health Concerns}
+? 
+! Undefined control sequence.
+l.164 \cvlistitem
+                 {Physically healthy save for a slight hearing condition in ...
+
+? 
+! Undefined control sequence.
+l.173 \section
+              {References}
+? 
+! Undefined control sequence.
+l.174 \begin
+            {cvcolumns}
+? 
+! Undefined control sequence.
+l.175   \cvcolumn
+                 [0.30]{Name}  		{\begin{itemize}\item Prof K. Bradshaw\item...
+
+? 
+! Undefined control sequence.
+l.175   \cvcolumn[0.30]{Name}  		{\begin
+                                        {itemize}\item Prof K. Bradshaw\item...
+
+? 
+[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 175 ({)
+### bottom level<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr10.pfb>
+Output written on main.pdf (1 page, 29475 bytes).
+PDF statistics:
+ 10 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

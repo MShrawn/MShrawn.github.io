@@ -1,0 +1,106 @@
+def d(x, y, img, n):
+	# d(x, y) = ln((r(x, y))/(prod{(s,t) E w(nxn)}[ r(s,t) ])^(1/n^2))
+    prod = long(1);
+    kernel_size = n/2;
+    kernel_cnt = 0;
+
+	# loop through each element in the kernel multiplying them together.
+	# component: prod{(s,t) E w(nxn)}[ r(s,t) ]
+    for i in range(-kernel_size + 1, kernel_size, 1):		# y
+        for j in range(-kernel_size + 1, kernel_size, 1):	# x
+	       # make sure we arnt at centre or going out of bounds of img
+            if ((y + i) >= 0) and ((y + i) < len(img)) and ((x + j) >= 0) and ((x+j) < len(img[0])):
+                if (img[y + i][x + j] != 0):
+                    prod *= long(img[y + i][x + j]);
+                    kernel_cnt+=1;
+
+    denominator = (prod**(1/float(kernel_cnt)));
+    if img[y][x] == 0:
+        pass;
+    temp_in = (img[y][x]) / denominator;
+    return math.log(temp_in);
+
+def h(x, y, img, alp, beta, n):
+	# h(x, y)      = e^[d(x,y)/(alpha*beta)]
+    return math.exp( d(x, y, img, n)/ (float(alp) * beta));
+
+def Average_grey(img, n):
+    # Average_grey = 1/(a*b) Sum{(x,y) E f(axb)}[abs(d(x,y))]
+    temp_sum = 0;
+
+    # go through each pixel in image and sum the results of the d function.
+    a, b = len(img), len(img[0]);
+    for x in range(0, b, 1):        # x
+	   for y in range(0, a, 1):     # y
+            temp_d = d(x, y, img, n);
+            if (temp_d < 0): temp_d = -temp_d;
+            # print(temp_d);
+            temp_sum += temp_d;
+
+    return (1/(float(len(img)*len(img[0]))) * temp_sum);
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+def Supression(img, n, beta):
+	# o_hat(x, y)  = { h(x, y);	h(x, y) <  1
+	#				 { 1;		h(x, y) >= 1
+    sup_img     = np.zeros((len(img), len(img[0])));      # create  blank slate
+    gry_ave     = Average_grey(img, n);                   # determine average pixel value
+    #print(gry_ave);
+    c = 1;
+    # go through each pixel and determine if it should be supressed or highlighted
+    a, b = len(img), len(img[0]);
+    for x in range(0, b, 1):        # x
+	   for y in range(0, a, 1):     # y
+            Highlight = h(x, y, img, gry_ave, beta, n)    #  cacl next highlight value
+            if( Highlight < 1):
+                sup_img[y][x]         = Highlight;
+                if (Highlight < c): c = Highlight;
+            else:
+                sup_img[y][x]   = 1;
+
+    return sup_img, c;
+
+def Mean_Illumination_Estimation_single(img):
+    # Implementation of the mean illumination estimation algorithm.
+    # takes as input a grey-scaled image and returns the Mean
+    # illumination estimation version
+
+    img = convertTo(img, 1);
+    # tweak-able values
+    beta = 2.2                      # gives best results
+    tmp_f   = (len(img[0])/float(168));
+    n = int(tmp_f * 11);  			# for testing purposes best set on aper image bases via the expression
+                                    # n = [(width/width_o) * n_o]
+                                    # n_0     = 11
+                                    # width   = curr image face width
+                                    # width_0 = database standard width for yale = (168)
+
+    # mathematical overview:
+	# d(x, y)      = ln((r(x, y))/(prod{(s,t) E w(nxn)}[ r(s,t) ])^(1/n^2))
+	# alpha        = 1/(a*b) Sum{(x,y) E f(axb)}[abs(d(x,y))]
+	# h(x, y)      = e^[d(x,y)/(alpha*beta)]
+	# o_hat(x, y)  = { h(x, y);	h(x, y) <  1
+	#				 { 1;		h(x, y) >= 1
+	# o(x, y)      = [ (255*(o_hat(x, y) - c)) / (1 - c)  ]
+
+
+    suppressed, c   = Supression(img, n, beta);
+    eqImg           = np.zeros((len(img), len(img[0])), dtype=np.uint8);	# create  blank slate
+    a, b            = len(img), len(img[0]);                  				# determine width and height
+    for x in range(0, b, 1):            # x
+        for y in range(0, a, 1):        # y
+            # Calc to spread out the highlighted values over entire spectrum
+            tmp = int(((255*(suppressed[y][x] - c))/(1-c)));
+            eqImg[y][x] = tmp;
+
+    return eqImg;

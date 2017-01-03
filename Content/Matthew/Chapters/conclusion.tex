@@ -1,0 +1,76 @@
+\section{Summing up}
+In this work we looked into the viability of creating a facial recognition system with the purpose 
+of tracking classroom attendance.  Doing so, we discovered that there are many ways to improve 
+recognition rates of such a system both from general normalization methods, as well as ways to use 
+the nature of the problem at hand to help in accuracy. \\
+
+The second aspect we noticed was that there was no readily available system that one could test new 
+ideas against existing solutions.  At this point, the purpose of this work changed to creating a 
+workstation from which a user could add a new normalization technique (or theorised improvement of 
+an already existing method) and compare results to past solutions to the targeted problem.  This work
+would then use classroom attendance tracking as an accompanying example.
+
+\subsection{Working Example}
+As an illustration of the proposed usage of the system this work looked into the viability of the 
+Mean Illumination Estimation in conjunction with the Eigenface method of facial recognition both 
+in general and specifically for our needs in classroom tracking.  The experiment probed from two 
+directions, one; we compared it against OpenCV's inbuilt histogram equalization solution to 
+illumination issues.  Two; we ran the experiment twice, one against the Yale B database and again 
+against the AT\&T database. \\
+
+The results of this experiment have already been discussed as can be seen in chapter 3.  However, 
+a short run-down of the highlights will follow.  MIE works really well when up against strong 
+illumination conditions;  directional lighting, strong global change in ambient light etc.  However, 
+it greatly degrades the quality of the image worked on meaning it wouldn't work well with  a multiple 
+normalisation technique based solution.  \\
+
+It was noted that OpenCV's histogram equalization would suit our classroom environment more adequately 
+than MIE as we deal more with global ambient change as opposed to local lighting changes and histogram 
+equalization does not have as much of an effect as MIE on the images processed. \\
+
+Nothing done in this work indicates that a system that uses facial recognition to track attendance in a 
+classroom environment is an infeasible goal.  We see from the AT\&T database (one that comprises of faces 
+taken under similar conditions to what one would expect in a classroom environment) that even before 
+normalization techniques are employed, recognition rates are almost within acceptable margins.  Certainly 
+no worse than the inaccuracies of the pen and paper approach commonly employed to solve this problem. \\
+
+A more pressing concern would be the total cost of such a system, on that front, this work envisions that such a
+system could work with off-the-shelf webcams.  Computationally, most any hardware system would be sufficient as 
+computation time would be of little concern.  Indeed (5 - 10) hours could be spent on computation per day and the 
+system would still be viable.
+ 
+\subsection{Theory of future work}
+Another aspect to this work was to look into the benefits of using a global optimisation technique 
+that would replace Eigenface's greedy first match classification system.  This was looked into in depth 
+in chapter 4. \\
+
+Due to limitations with the C++ implementation of OpenCV's Eigenface algorithm, such manipulation of its 
+inner workings is currently not available to us.  This is not the only project that has wanted a feature 
+like this as indicated in the answer to a request for such functionality to be added by the maintainers of OpenCV
+~\cite{Eigenface_classification} who replied that they have had many such requests and that it is possible they 
+will be adding such functionality at a later stage. \\
+
+Going with this, this work explored how such data could be exploited to yield better accuracies from systems 
+where both the training set and test set are known (or should be known).  Having looked specifically at the 
+Hungarian algorithm as it offers a solution in polynomial time of O($n^4$)~\cite{munkres1957algorithms}.  Whereas 
+any naive solution to the problem (pick all combinations and choose the smallest) would be of O(n!)
+
+\section{Looking ahead}
+This work is such that it will never truly be finished, there are many more normalization techniques that 
+can be added into the system for comparison, or one could add different recognition algorithms to classify 
+test faces.  Examples would include Fisherfaces and Local Binary Patterns Histograms. \\
+
+Strong candidates for future work are solutions to the assignment problem brought up previously  with the 
+provided possible solution being the Hungarian algorithm.  Also needed are some form of alignment normalization 
+techniques probably something simple to start like using the eyes to align and scale the face.  Both of these 
+are pressing issues that will need to be taken into account if one wishes to create an extensive recognition 
+system.  \\
+
+Also now that it is clear that such a system can indeed be useful it could be prudent to change over to a C/C++ 
+implementation of the working code, this will improve performance in many areas and provide a more in-depth 
+control of OpenCV.  \\
+
+If this system is indeed intended for use in classroom attendance tracking then another system will need to 
+be devised to compile a set of images per subject and break them up into class sets at the start of each year, 
+also allowing for manual addition or removal of students from such a list.
+

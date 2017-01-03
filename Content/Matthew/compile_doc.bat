@@ -1,0 +1,4 @@
+pdflatex Thesis_g12k1298.tex
+bibtex Thesis_g12k1298
+bibtex Thesis_g12k1298
+pdflatex Thesis_g12k1298

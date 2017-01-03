@@ -1,0 +1,162 @@
+\documentclass{newrucsthesis}
+\setlength{\parindent}{0in}
+%\usepackage{fullpage}
+\usepackage[english]{babel}
+	\addto{\captionsenglish}{\renewcommand{\bibname}{References}}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{setspace}
+\usepackage{courier}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage [autostyle, english = american]{csquotes}
+\usepackage{url}
+\usepackage{float}
+
+% ====================================================================== %
+% test listing system
+\usepackage{listings}
+\usepackage{color}
+
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{blue},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{yellow},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=4
+}
+
+\lstset{style=mystyle}
+% ====================================================================== %
+
+\everymath{\displaystyle}
+\graphicspath{ {images/} }
+\restylefloat{figure}
+
+\begin{document}
+
+	\pagenumbering{roman}
+	\onehalfspacing
+	\input{Chapters/Thesis_title_g12k1298}
+
+	% =================== =================== %
+	% Preliminaries to be Numbered with 
+	% roman numerals
+	% =================== =================== %	
+	\section*{Abstract}
+		This work looks into the feasibility of using facial recognition to track lecture/classroom 
+		attendance.  It is clear that any such system would need to take into account many normalization 
+		concerns, to this end, this work employs a facial recognition workstation to easily test such 
+		techniques.  A literature study points to an illumination correction algorithm, known as the Mean
+		Illumination Estimation.  Results correlate strongly with the literatures claims that such a method 
+		would best the current standard for illumination correction.  However, for our specific classroom 
+		environment	we conclude that such a method is not adequate.  This work also looks into applying a 
+		minimum cost assignment optimisation upon the output provided by the Eigenface Algorithm.
+	
+		\newpage
+	
+	\section*{ACM Classification}
+		\begin{enumerate}
+			\item Computing methodologies---Artificial intelligence---Computer vision---Computer vision problems---Object recognition;500
+			\item Computing methodologies---Artificial intelligence---Computer vision---Computer vision tasks---Biometrics;500
+			\item Mathematics of computing---Mathematical analysis---Numerical analysis---Computations on matrices;500
+			\item Computing methodologies---Symbolic and algebraic manipulation---Symbolic and algebraic algorithms---Optimization algorithms;300
+			\item Applied computing---Physical sciences and engineering---Mathematics and statistics;100
+		\end{enumerate}
+		Other Keywords:
+		\begin{itemize}	
+			\item Facial recognition workstation;500
+			\item Illumination normalization;500
+			\item Multiple cost assignment minimization;300
+			\item Hungarian Algorithm;300
+		\end{itemize}
+		\newpage
+	
+	\section*{Acknowledgements}
+	I would like to acknowledge the financial and technical support of 
+	Telkom SA, Tellabs, Easttel, Bright Ideas 39, THRIP and 
+	NRF SA (UID 75107) through the Telkom Centre of Excellence in the
+	Department of Computer Science at Rhodes University. \\
+	
+	I would like to acknowledge The Rhodes University Computer Science 
+	Honours class (2015) for minor latex usage technical support over 
+	the past year.
+	\newpage	
+	
+	\tableofcontents
+	\newpage	
+	\listoffigures
+	
+	\newpage
+
+	% =================== =================== %
+	% Main body of work separated out into 
+	% separate files to be Numbered with 
+	% arabic numerals
+	% =================== =================== %
+	\newpage
+	\pagenumbering{arabic}
+	
+	% introductory chapter explaining what my 
+	% project is all about;
+	% Motivation for the research – why and put in perspective
+	% Nature of research = research questions to be addressed
+	% + key concepts + hypothesis
+	
+	% Brief description of approach – preface to Methodology
+	% section later. Broad but clear view.
+	% Organization of rest of thesis
+	\chapter{Introduction}
+	\input{chapters/introduction}
+	
+	% Chapter containing reviews of all my source 
+	% material expanded upon in the rest o the 
+	% thesis
+	\chapter{Research of Background Literature}
+	\input{chapters/Lit_rev}
+	
+	% Chapter to lay out the theoretical design 
+	% my project will conform to.
+	\chapter{Illumination}
+	\input{Chapters/Illumination}
+	
+	% chapter detailing all nmerical results 
+	% obtained through various experiments done 
+	% both along the way and upon compleation 
+	% of my system.
+	\chapter{Assignment Problem}
+	\input{Chapters/Chp_Assignment}
+	
+	% conclusionary chapter detailing how i met
+	% the "goals" set forth in the Introduction
+	\chapter{Conclusion}
+	\input{chapters/conclusion}
+	
+	\appendix
+	\chapter{Code Extracts}
+	\input{chapters/appendix}
+	
+	% =================== =================== %
+	\addcontentsline{toc}{chapter}{References} 
+	\bibliographystyle{rucsacm}
+	\bibliography{thesis}
+\end{document}

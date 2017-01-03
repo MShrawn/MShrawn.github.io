@@ -1,0 +1,172 @@
+\begin{thebibliography}{10}
+
+\bibitem{ATTDATA}
+At\&t database.
+\newblock
+  \url{http://www.cl.cam.ac.uk/research/dtg/attarchive/facedatabase.html }, 17
+  Nov 2015.
+
+\bibitem{urlIntuitiveHistEqualization}
+Digital multi-media design.
+\newblock
+  \url{http://dmmd.net/main_wp/intuitive-mathematics/histogram-equalization/ },
+  15 Oct 2015.
+
+\bibitem{fingerprintsystems}
+Fingerprint identification.
+\newblock \url{http://biometrics.cse.msu.edu/pubs/fingerprints.html }, 17 Nov
+  2015.
+
+\bibitem{Hungarian_alg}
+Harvard university.
+\newblock
+  \url{http://www.math.harvard.edu/archive/20_spring_05/handouts/assignment_overheads.pdf
+  }, 16 Oct 2015.
+
+\bibitem{Numpyorg}
+Numpy.
+\newblock \url{http://www.numpy.org/ }, 23 Oct 2015.
+
+\bibitem{OpenCVorg}
+Opencv.
+\newblock \url{http://opencv.org/ }, 23 Oct 2015.
+
+\bibitem{Eigenface_classification}
+Opencv.
+\newblock
+  \url{http://answers.opencv.org/question/3494/adding-new-method-in-facerecognizer/
+  }, 19 Oct 2015.
+
+\bibitem{OpenCVTut}
+Opencv recognition tutorials.
+\newblock
+  \url{http://docs.opencv.org/2.4/modules/contrib/doc/facerec/facerec_tutorial.html},
+  17 Nov 2015.
+
+\bibitem{Pythonorg}
+Python.
+\newblock \url{https://www.python.org/about/ }, 23 Oct 2015.
+
+\bibitem{urlHistEqualization}
+University of california.
+\newblock \url{http://www.math.uci.edu/icamp/courses/math77c/demos/hist_eq.pdf
+  }, 15 Oct 2015.
+
+\bibitem{bradskeiLOCVwtOL}
+{\sc Gary~Bradski, A.~K.}
+\newblock {\em Learning OpenCV Computer Vision with the OpenCV Library}.
+\newblock O'Reily Media, Inc., 1005 Gravenstein Highway North, Sebastopol, CA
+  95472, 2008.
+
+\bibitem{hasan2011improving}
+{\sc Hasan, M.~K., and Pal, C.~J.}
+\newblock Improving alignment of faces for recognition.
+\newblock In {\em Robotic and Sensors Environments (ROSE), 2011 IEEE
+  International Symposium on\/} (2011), IEEE, pp.~249--254.
+
+\bibitem{JianSaCSiIaSRCTaA}
+{\sc Ho, J., Funt, B.~V., and Drew, M.~S.}
+\newblock Separating a color signal into illumination and surface reflectance
+  components: Theory and applications.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions on
+  12}, 10 (1990), 966--977.
+
+\bibitem{KCLee05}
+{\sc Lee, K., Ho, J., and Kriegman", D.}
+\newblock "acquiring linear subspaces for face recognition under variable
+  lighting ".
+\newblock {\em "IEEE Trans. Pattern Anal. Mach. Intelligence" 27}, 5 (2005),
+  "684--698".
+
+\bibitem{MarceloFIFLA}
+{\sc Lorenco., M.}
+\newblock Part 01 for project: Facial recognition for classroom attendance
+  tracking, 2015.
+
+\bibitem{KarheSASAUFR}
+{\sc Mr. C. S.~Patil, Mr. R. R.~Karhe, M. M. D.~J.}
+\newblock Student attendance system and authentication using face recognition.
+\newblock {\em International Journal of Engineering Research and Technology
+  (IJERT) 3}, 7 (2014), 373--375.
+
+\bibitem{munkres1957algorithms}
+{\sc Munkres, J.}
+\newblock Algorithms for the assignment and transportation problems.
+\newblock {\em Journal of the Society for Industrial and Applied Mathematics
+  5}, 1 (1957), 32--38.
+
+\bibitem{BalcohAfEAM}
+{\sc Naveed Khan~Balcoh, M. Haroon~Yousaf, W.~A., and Baig, M.~I.}
+\newblock Algorithm for efficient attendance management: Face recognition based
+  approach.
+\newblock {\em IJCSI International Journal of Computer Science Issues 9}, 4
+  (2012), 146--150.
+
+\bibitem{PatelDoaSAMSURaFR}
+{\sc Patel, U.~A., and R, D. S.~P.}
+\newblock Development of a student attendance management system using rfid and
+  face recognition: A review.
+\newblock {\em International Journal of Advance Research in Computer Science
+  and Management Studies 2}, 8 (2014), 109--119.
+
+\bibitem{plantClassification}
+{\sc "R.~Lagerwall, S.~V.}
+\newblock "plant classification using leaf recognition".
+\newblock {\em "University of KwaZulu-Natal"\/}, "91--95".
+
+\bibitem{urldatabases}
+{\sc RECOGITION, F.}
+\newblock \url{http://www.face-rec.org/databases/ }, 26 Feb 2015.
+
+\bibitem{Assignmentproblems}
+{\sc Shakeri, M., Low, M., and Li, Z.}
+\newblock A generic model for crossdock truck scheduling and truck-to-door
+  assignment problems.
+\newblock In {\em Industrial Informatics, 2008. INDIN 2008. 6th IEEE
+  International Conference on\/} (July 2008), pp.~857--864.
+
+\bibitem{barcode}
+{\sc Sriram, T., Vishwanatha~Rao, K., Biswas, S., and Ahmed, B.}
+\newblock Applications of barcode technology in automated storage and retrieval
+  systems.
+\newblock In {\em Industrial Electronics, Control, and Instrumentation, 1996.,
+  Proceedings of the 1996 IEEE IECON 22nd International Conference on\/} (Aug
+  1996), vol.~1, pp.~641--646 vol.1.
+
+\bibitem{szeliski2010computer}
+{\sc Szeliski, R.}
+\newblock {\em Computer vision: algorithms and applications}.
+\newblock Springer Science \& Business Media, 2010.
+
+\bibitem{FDGFN2009}
+{\sc Talele, K.~T., and Kadam, S.}
+\newblock Face detection and geometric face normalization.
+\newblock In {\em TENCON, IEEE Region 10 International Conference\/} (2009).
+
+\bibitem{GlOP1989}
+{\sc Torn, A., and Zilinskas, A.}
+\newblock {\em Global Optimization}.
+\newblock Springer-Verlag New York, Inc., New York, NY, USA, 1989.
+
+\bibitem{turk1991eigenfaces}
+{\sc Turk, M., and Pentland, A.}
+\newblock Eigenfaces for recognition.
+\newblock {\em Journal of cognitive neuroscience 3}, 1 (1991), 71--86.
+
+\bibitem{urlEgienFaceTut}
+{\sc University, D.}
+\newblock http://www.pages.drexel.edu/~sis26/eigenface%20tutorial.htm, 03 May
+  2015.
+
+\bibitem{RFID}
+{\sc Weinstein, R.}
+\newblock Rfid: a technical overview and its application to the enterprise.
+\newblock {\em IT Professional 7}, 3 (May 2005), 27--33.
+
+\bibitem{LuoaRINMBoMEfFR}
+{\sc Yong~Luo, Y.-P.~G., and Zhang, C.-Q.}
+\newblock A robust illumination normalization method based on mean estimation
+  for face recognition.
+\newblock {\em ISRN Machine Vision 2013}, 516052 (2013), 0--10.
+
+\end{thebibliography}

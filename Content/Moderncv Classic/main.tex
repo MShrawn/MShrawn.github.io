@@ -1,0 +1,220 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[12pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{orange}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                        % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+%----------------------------------------------------------------------------------
+%            Personal Data
+%----------------------------------------------------------------------------------
+\name{Matthew}{Kingon}
+\title{Curriculum Vitae}                            % optional, remove / comment the line if not wanted
+\address{3 St Aidens}{Grahamstown}{South Africa}	% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{~071~892~1092}               		% optional, remove / comment the line if not wanted
+\phone[fixed] {(next of kin)~021~558~6130}          % optional, remove / comment the line if not wanted
+\email{matshaki@gmail.com}                  		% optional, remove / comment the line if not wanted
+% \homepage{www.johndoe.com}                		% optional, remove / comment the line if not wanted
+\extrainfo{University Graduate}                		% optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{picture}               			% optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{"The joy of a problem is in finding the solution."}    % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2015--2016}{(Current Occupation) HONS}	{Rhodes University}			{Grahamstown}{\textit{}}{Computer Science}
+\cventry{2012--2015}{BSC}						{Rhodes University} 		{Grahamstown}{\textit{}}{MAJORS: Computer Science (74), Maths (69)}  % arguments 3 to 6 can be left empty
+\cventry{2005--2011}{HIGHSCHOOL}				{Edgemead High School}		{Cape Town}{\textit{}}	{SUBJECTS: English, Afrikaans, Mathematics, Physics, Geography,\newline{}
+																									 Accountancy, LO, Advanced Maths}  % arguments 3 to 6 can be left empty
+\cventry{1998--2005}{PRIMARY}					{Edgemead Primary School}	{Cape Town}{\textit{}}	{}  % arguments 3 to 6 can be left empty
+
+\section{Honours: Thesis}
+\cvitem{title}{\emph{Facial Recognition Workstation with Example} }
+\cvitem{supervisor} {Prof. P. Wentworth}
+\cvitem{description}{Creation of a simple to extend facial recognition workstation to aid\newline{}
+					 in performance and accuracy testing of new recognition or normalization\newline{}
+					 techniques.}
+
+\section{Honours: Course work}
+\subsection{Modules: (Complete)}
+\cvitemwithcomment{}{\hspace*{10 mm}-Computer Interfacing (I)} 			{73.1/100}
+\cvitemwithcomment{}{\hspace*{10 mm}-Image Processing} 					{65.3/100}
+\cvitemwithcomment{}{\hspace*{10 mm}-Real Time Multimedia} 				{65.5/100}
+
+\subsection{Modules: (To Complete by end November 2015)}
+\cvitemwithcomment{}{\hspace*{10 mm}-Computer Interfacing (II)} 		{}
+\cvitemwithcomment{}{\hspace*{10 mm}-Mobile Technologies}				{}
+\cvitemwithcomment{}{\hspace*{10 mm}-General Programming on the GPU} 	{}
+
+\section{Experience}
+\subsection{Vocational}
+\cventry{2011--2012}{Shop Assistant}{Video 2000}{Cape Town}{}{check-out videos to customers, adding said customers to the local database\newline{}
+															  if it is their first purchase, placing DVD's back on shelves.  Handling calls\newline{}
+															  from customers and calling customers to request safe return of rented DVD's\newline{}%
+% Detailed achievements:%
+% \begin{itemize}%
+% \item Achievement 1;
+% \item Achievement 2, with sub-achievements:
+%   \begin{itemize}%
+%   \item Sub-achievement (a);
+%   \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%     \begin{itemize}
+%     \item Sub-sub-achievement i;
+%     \item Sub-sub-achievement ii;
+%     \item Sub-sub-achievement iii;
+%     \end{itemize}
+%   \item Sub-achievement (c);
+%   \end{itemize}
+% \item Achievement 3.
+% \end{itemize}
+}
+
+\cventry{2013--2016}{Tutor}{Rhodes University}{Grahamstown}{}{Help students do practicals set out for them by their lecturers each week.\newline{}
+															  mark their submissions and give feedback on their mistakes.}
+% \subsection{Miscellaneous}
+% \cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+\section{Languages}
+\subsection{Spoken}
+\cvitemwithcomment{English}		{Fluent}	 	{(First language)}
+\cvitemwithcomment{Afrikaans}	{Some}	 		{(Second Language)}
+
+\subsection{Written}
+\cvitemwithcomment{English}		{Acceptable}	{(First language)}
+\cvitemwithcomment{Afrikaans}	{None}	 		{(Second Language)}
+
+\section{Coding Languages: General}
+\cvitemwithcomment{Python}		{High}	{}
+\cvitemwithcomment{C Sharp}		{High}	{(Primary University languages)}
+\cvitemwithcomment{Java}		{High}	{}
+\cvitemwithcomment{C}			{Medium}{}
+\cvitemwithcomment{C++}			{Medium}{(module specific languages over the years)}
+\cvitemwithcomment{F Sharp}		{low}{}
+
+\section{Coding Languages: Specialised}
+\cvitemwithcomment{LaTeX}		{High}	{used for thesis + this CV}
+\cvitemwithcomment{Android SDK}	{Medium}{Used during my Honors year for one of my modules}
+
+\pagebreak
+
+\section{Skills}
+\subsection{Licenses}
+\cvitemwithcomment{Drivers}							{Obtained}		{}
+\cvitemwithcomment{Private Pilots License (PPL)}	{Expired}		{}
+
+\subsection{Working under various Operating systems}
+\cvitemwithcomment{Windows}			{High}		{}
+\cvitemwithcomment{Ubuntu}			{Medium}	{}
+\cvitemwithcomment{Mac}				{None}		{}
+\cvitemwithcomment{Linux Terminal}	{Medium}	{}
+\cvitemwithcomment{Windows Terminal}{Medium}	{}
+
+\subsection{Working with Databases}
+\cvitemwithcomment{SQLite}			{Medium}	{}
+\cvitemwithcomment{Postgress}		{Medium}	{}
+
+\subsection{Working in Web Development}
+\cvitemwithcomment{-}				{low}		{}
+
+\subsection{Other skills}
+\cvlistitem{I have built and upgraded various PC rigs over the years.}
+
+\section{Interests}
+\cvitem{PC Gaming}		{Playing and Modding PC Games }
+\cvitem{Model building}	{Building and painting miniatures }
+\cvitem{Flying}			{(However due to medical conditions beyond my control my license has expired)}
+\cvitem{Reading}		{Somewhat slowed down in this hobby}
+
+\section{Health Concerns}
+\cvlistitem{Physically healthy save for a slight hearing condition in the right ear that causes hearing loss and misinterpretation of what is heard through that ear.   However the left ear is perfectly healthy.  So, aside from occasionally having to tilt my head to the side and asking for a repeat of what was said, the condition is not noticeable.  Other than that, there are no other medical concerns present.}
+% \cvlistitem{Item 2}
+% \cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+% \section{Extra 2}
+% \cvlistdoubleitem{Item 1}{Item 4}
+% \cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+% \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+\section{References}
+\begin{cvcolumns}
+  \cvcolumn[0.30]{Name}  		{\begin{itemize}\item Prof K. Bradshaw\item Prof P. Wentworth\end{itemize}}
+  \cvcolumn[0.40]{Email Address}{\begin{itemize}\item k.bradshaw@ru.ac.za\item p.wentworth@ru.ac.za\end{itemize}}
+  \cvcolumn{Contact}			{\begin{itemize}\item ~046~603~8293 \item ~046~603~8633 \end{itemize}}
+\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%\clearpage
+%-----       letter       ---------------------------------------------------------
+% recipient data
+%\recipient{Company Recruitment team}{Company, Inc.\\123 somestreet\\some city}
+%\date{January 01, 1984}
+%\opening{Dear Sir or Madam,}
+%\closing{Yours faithfully,}
+%\enclosure[Attached]{curriculum vit\ae{}}          % use an optional argument to use a string other than "Enclosure", or redefine \enclname
+%\makelettertitle
+
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper neque sit amet lectus facilisis sed luctus nisl iaculis. Vivamus at neque arcu, sed tempor quam. Curabitur pharetra tincidunt tincidunt. Morbi volutpat feugiat mauris, quis tempor neque vehicula volutpat. Duis tristique justo vel massa fermentum accumsan. Mauris ante elit, feugiat vestibulum tempor eget, eleifend ac ipsum. Donec scelerisque lobortis ipsum eu vestibulum. Pellentesque vel massa at felis accumsan rhoncus.
+
+%Suspendisse commodo, massa eu congue tincidunt, elit mauris pellentesque orci, cursus tempor odio nisl euismod augue. Aliquam adipiscing nibh ut odio sodales et pulvinar tortor laoreet. Mauris a accumsan ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse vulputate sem vehicula ipsum varius nec tempus dui dapibus. Phasellus et est urna, ut auctor erat. Sed tincidunt odio id odio aliquam mattis. Donec sapien nulla, feugiat eget adipiscing sit amet, lacinia ut dolor. Phasellus tincidunt, leo a fringilla consectetur, felis diam aliquam urna, vitae aliquet lectus orci nec velit. Vivamus dapibus varius blandit.
+
+%Duis sit amet magna ante, at sodales diam. Aenean consectetur porta risus et sagittis. Ut interdum, enim varius pellentesque tincidunt, magna libero sodales tortor, ut fermentum nunc metus a ante. Vivamus odio leo, tincidunt eu luctus ut, sollicitudin sit amet metus. Nunc sed orci lectus. Ut sodales magna sed velit volutpat sit amet pulvinar diam venenatis.
+
+%Albert Einstein discovered that $e=mc^2$ in 1905.
+
+%\[ e=\lim_{n \to \infty} \left(1+\frac{1}{n}\right)^n \]
+
+%\makeletterclosing
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.

@@ -1,0 +1,58 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Project Background}{1}
+\contentsline {subsection}{\numberline {1.1.1}Background context}{1}
+\contentsline {subsection}{\numberline {1.1.2}Making a Toolbox}{3}
+\contentsline {section}{\numberline {1.2}The Project}{3}
+\contentsline {subsection}{\numberline {1.2.1}Description of this Work}{3}
+\contentsline {subsection}{\numberline {1.2.2}What my code should do}{4}
+\contentsline {subsection}{\numberline {1.2.3}Language choice}{4}
+\contentsline {subsection}{\numberline {1.2.4}Things to note}{4}
+\contentsline {section}{\numberline {1.3}Other Key Aspects}{5}
+\contentsline {subsection}{\numberline {1.3.1}Computer Vision}{5}
+\contentsline {subsection}{\numberline {1.3.2}Illumination Normalization}{5}
+\contentsline {subsection}{\numberline {1.3.3}Global/Greedy Optimisation}{6}
+\contentsline {chapter}{\numberline {2}Research of Background Literature}{7}
+\contentsline {section}{\numberline {2.1}Introduction to Literature Review}{7}
+\contentsline {subsection}{\numberline {2.1.1}Readings for Literature Survey}{7}
+\contentsline {section}{\numberline {2.2}Overview of Used Systems}{8}
+\contentsline {section}{\numberline {2.3}Image representation overview}{9}
+\contentsline {section}{\numberline {2.4}Eigenface Algorithm}{10}
+\contentsline {subsection}{\numberline {2.4.1}Intuitive description}{10}
+\contentsline {subsection}{\numberline {2.4.2}Training}{11}
+\contentsline {subsection}{\numberline {2.4.3}Prediction}{13}
+\contentsline {subsection}{\numberline {2.4.4}Summary of EigenFaces}{14}
+\contentsline {section}{\numberline {2.5}Normalization}{15}
+\contentsline {subsection}{\numberline {2.5.1}Cropping}{15}
+\contentsline {subsection}{\numberline {2.5.2}Lighting}{16}
+\contentsline {subsection}{\numberline {2.5.3}Alignment and scaling}{16}
+\contentsline {section}{\numberline {2.6}Summary}{16}
+\contentsline {chapter}{\numberline {3}Illumination}{18}
+\contentsline {section}{\numberline {3.1}The Issue of Illumination}{18}
+\contentsline {section}{\numberline {3.2}Comparing Two Methods}{19}
+\contentsline {subsection}{\numberline {3.2.1}Histogram Equalization}{19}
+\contentsline {subsection}{\numberline {3.2.2}Summary of Histogram Equalization}{20}
+\contentsline {subsection}{\numberline {3.2.3}Mean Illumination Estimation}{21}
+\contentsline {subsection}{\numberline {3.2.4}Summary of Mean Illumination Estimation}{24}
+\contentsline {subsection}{\numberline {3.2.5}Validation of MIE implementation}{25}
+\contentsline {section}{\numberline {3.3}Reading The Graphs}{27}
+\contentsline {section}{\numberline {3.4}A word on training}{28}
+\contentsline {section}{\numberline {3.5}Experiment 01: Setup}{28}
+\contentsline {subsection}{\numberline {3.5.1}Experiment 01: Results}{28}
+\contentsline {subsection}{\numberline {3.5.2}Experiment 01: Discussion}{31}
+\contentsline {section}{\numberline {3.6}Experiment 02: Setup}{31}
+\contentsline {subsection}{\numberline {3.6.1}Experiment 02: Results}{32}
+\contentsline {subsection}{\numberline {3.6.2}Experiment 02: Discussion}{35}
+\contentsline {section}{\numberline {3.7}Summary}{36}
+\contentsline {chapter}{\numberline {4}Assignment Problem}{38}
+\contentsline {section}{\numberline {4.1}The Problem}{38}
+\contentsline {section}{\numberline {4.2}The Assignment problem}{39}
+\contentsline {section}{\numberline {4.3}Hungarian Algorithm}{40}
+\contentsline {section}{\numberline {4.4}Summary}{45}
+\contentsline {chapter}{\numberline {5}Conclusion}{47}
+\contentsline {section}{\numberline {5.1}Summing up}{47}
+\contentsline {subsection}{\numberline {5.1.1}Working Example}{47}
+\contentsline {subsection}{\numberline {5.1.2}Theory of future work}{48}
+\contentsline {section}{\numberline {5.2}Looking ahead}{49}
+\contentsline {chapter}{\numberline {A}Code Extracts}{50}
+\contentsline {chapter}{References}{53}

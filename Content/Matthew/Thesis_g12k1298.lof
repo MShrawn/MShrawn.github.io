@@ -1,0 +1,33 @@
+\select@language {english}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Example of a training set. Some faces are blacked out due to lack of permission.}}{11}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The Average Face}}{12}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Optical Illusion example}}{19}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Mean Illumination Estimation images before and after applying MIE taken from~\cite {LuoaRINMBoMEfFR}}}{24}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces My MIE implementation [col 3] tested against provided example from ~\cite {LuoaRINMBoMEfFR} [col 2] }}{25}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces MIE implementation applied to CSC Honours 2015 Class list, Rhodes University. Some blacked out due to lack of permission from subjects}}{26}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Histogram Equalization applied to article example faces~\cite {LuoaRINMBoMEfFR} }}{27}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Base line, no illumination normalization used; AT\&T }}{29}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Histogram Equalization experiment; AT\&T }}{29}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces MIE experiment; AT\&T }}{30}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Histogram then MIE; AT\&T }}{30}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces MIE then Histogram; AT\&T }}{31}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Base line, no illumination normalization used; Yale B}}{32}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Histogram equalization experiment; Yale B }}{33}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces MIE experiment; Yale B }}{33}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Histogram then MIE; Yale B }}{34}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces MIE then Histogram; Yale B }}{34}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The Assignment problem }}{39}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The Assignment problem solution }}{40}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Initial matrix }}{42}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Subtraction of least value per row }}{42}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Subtraction of least value per column }}{43}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Selection of rows and columns step 1 }}{43}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Selection of rows and columns step 2 }}{44}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Selection of rows and columns step 3 }}{44}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Final State.}}{45}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

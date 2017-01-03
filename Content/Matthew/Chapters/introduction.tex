@@ -1,0 +1,152 @@
+\section{Project Background}
+	\subsection{Background context}
+		Despite modern day technology many school environments still struggle with the problem of class/lecture 
+		attendance tracking.  Some may ask, why do we need to track attendance?  Tracking attendance 
+		has many useful benefits for schools and universities the obvious one is that many students try skip 
+		lectures to avoid work.  Thus tracking their attendance would help in identifying such students.  This 
+		would, hopefully, result in greater attendance of such classes/lectures. \\
+
+		The existing solution to this problem has varied slightly but for the most part has either been a simple 
+		piece of paper passed around the class letting the students sign/tick their names off (mostly used in 
+		universities), or a roll call at the start of the class by teachers in lower level class room environments 
+		(primary/high-school).  \\
+
+		Thus it shouldn't come as a surprise that there have been many attempts to solve the problem of lecture 
+		attendance tracking and hence remove some issues.  Some of the main ideas put forward are: barcode scanners
+		~\cite{barcode}, RFID systems~\cite{RFID} and the ever popular fingerprint scanners~\cite{fingerprintsystems}.  
+		The problem with these systems is that they are still all rather intrusive workarounds, requiring students to 
+		take an active part in their attendance tracking, this results in either lines outside of lecture room venues 
+		as students wait to verify that they are in attendance, or alternatively, a rather distracting procedure to do 
+		while they could be listening to the lecture. \\
+
+		Past papers on this topic have addressed the existence of these issues in some context or another
+		~\cite{PatelDoaSAMSURaFR,BalcohAfEAM,KarheSASAUFR}.  Now as many have recognized that facial recognition has 
+		the potential to be a very simple, and non-intrusive means of tracking attendance, as in the ideal case it
+		would simply need a camera at the front of the class and as the lecture goes on it identifies all students 
+		present.  However, the technology available today is still not robust enough, hence the need for further 
+		research, development and refinement in this field.  \\
+		
+		Some points of interest to consider are lighting, as it is a very big problem that has had many attempts at a 
+		solution most are not satisfactory as they degrade the image too extensively.  The required camera quality is 
+		also an area of interest.  Ideally it would be good to get a solution that can work with an off-the-shelf 
+		web-cam.  \\		
+		
+		It should be noted that facial recognition isn't a perfect science to start with.  Many solutions don't even 
+		take into account that they are attempting to recognize a face.  These algorithms could be more accurately
+		described as object recognizers, some rather popular examples of this type of system include Egienfaces, 
+		Fisherfaces. This work takes into account many of these issues and also attempts to use environment specific 
+		knowledge to recognize students (the fact that we know both the training set and class set). \\
+		
+		As stated there have already been numerous attempts at a solution for classroom attendance.  Some have been 
+		more successful than others.  However, this work differs from the others as we hope to design a system that 
+		can be easily extended or modified to test out new ideas to improve recognition.  Not only do we wish to offer 
+		a system one can easily plug new normalization techniques into, but also able to make use of additional 
+		information that pertains to a specific problem a user may be facing. \\
+		
+		Possible additional information that could be exploited include the knowledge that students tend to sit in the 
+		same area each day often varying their position by little more than a seat or two.  This knowledge could be used 
+		to strengthen accuracy ratings should an individual known to sit at that location is identified.  Another aspect 
+		could be useful to such a system is the knowledge that prior to lectures it is already known who should be there.  
+		Thus an attempt can be made to optimize the solution between two sets, namely a set of present faces, and the 
+		class-list set. \\
+
+		Facial recognition is a complex field and has been well researched over the past decades even so, it is far from 
+		being a fully understood or solved problem.  An aspect clearly portrayed by the fact that there are many 
+		variations in methods and techniques out there to solve this problem. \\
+		
+		The work provides an illustrated application of this platform by implementing facial recognition for lecture 
+		attendance tracking.  This work focuses on extending the pre-processing side of the tool-kit using the already 
+		provided OpenCV implementation of Eigenfaces to do the actual recognition.  One notable addition would be adding 
+		the Mean Illumination Estimation algorithm.   Some more concepts that are added include; image cropping, 
+		orientation correction and plane alteration.  All of the above concepts describe various aspects of image 
+		normalization.
+		
+	\subsection{Making a Toolbox}
+		A constantly developing key aspect of this research project is creating a facial recognition tool-kit.  
+		This platform will act as scaffolding for the addition of any features related to facial recognition, be it 
+		pre-processing or actual facial recognition algorithms.  The idea is to selectively add relevant image 
+		manipulation techniques or other such features to the code base, thus allowing the client to mix and match 
+		them and after application get a report stating how successful the combinations that where chosen are.  Some features 
+		would be cropping the faces out from the background noise, others would aim to control lighting.   \\
+			
+			
+\section{The Project}
+	\subsection{Description of this Work}
+		The overall goal of this research is to determine if it is possible to efficiently automate attendance tracking 
+		in lectures via facial recognition.  In a related project (not directly part of this work) a video stream of the 
+		class is analysed to extract and cluster faces of the same individual.  In this work we take a direct approach that 
+		finds the best match for each normalized cluster in the class list of faces.  A second approach is theorised that 
+		would simultaneously take into account all possible matchings and find a globally optimized assignment of each 
+		cluster to the class list. A comparison of matching accuracies for the two techniques could then be provided to 
+		determine the benefits or trade-offs.
+
+	\subsection{What my code should do} 
+		My code should be able to: take input of the form of a folder of images.  In each image would be a single face 
+		with around ten such images~\cite{OpenCVTut} per subject.  I would then take those images, put them through some form of 
+		normalization, thereafter put them through the recognizer which will then compare the created feature vector 
+		against those created from the database which was used to train the system.  Doing this comparison, the system 
+		would determine the most likely candidate for the subject in question.  
+
+	\subsection{Language choice}
+		The language my code will be implemented in will be Python, on a windows based OS, making use of the OpenCV image 
+		processing library.  The reason I've chosen Python is for its ease of use with regards to image processing and 
+		the intention of this work is that of a working proof of concept so efficiency is not a concern at this stage.  
+		I made the choice of using OpenCV as it is the most robust open source library package for image processing.  
+		Another factor in favour of OpenCV is that it is open source and thus free.  Part of the aim of this work is to 
+		create a low cost system. 
+		
+	\subsection{Things to note}
+		As with most academic work, some formality of raw data is often required, for this work this data is facial images or more 
+		accurately, databases of facial images.  I would need such databases to train my system to recognise faces in a 
+		controlled manner.  Once I have refined my system to recognise these faces with a satisfactory degree of accuracy 
+		that conform with other literature, I will extend it to recognize faces in every day images.  Ultimately this work will be testing using 
+		data obtained from a lecture venue environment. \\
+
+		Luckily there is a ready supply of such collections.  A starting point to find such databases would be the site
+		~\cite{urldatabases} which catalogues, with descriptions, many such databases.  An initial overview of the site 
+		indicates that I should look into the Yale B face Database as it contains far more variety than others especially 
+		when it comes to illumination changes.  However, the FERET database makes use of notably more consistent backgrounds.  \\
+		
+		Another database I will look at is the AT\&T database~\cite{ATTDATA}.  It is smaller than the Yale B database, but has more realistic real 
+		world orientations of faces and the more likely accurate representation of images captured in a classroom environment.
+	
+\section{Other Key Aspects}
+	\subsection{Computer Vision}
+		For my project I need to know how to recognise faces, hence a useful starting point would be how to interpret images.  
+		Both these requirements fall under computer vision.  Computer vision is the field focusing on using image processing 
+		to gain information from images for a computer to use.  Ideally this would let the computer view the world in much 
+		the same manner as how we humans see it. \\
+		
+		Computer vision makes use of edge detection, object recognition, feature detection and many other techniques to help 
+		make a computer see the world as we do.  This concept is an infinitely harder task than someone outside the field of 
+		computer vision may believe.  Mostly due to the effortlessness at which a human brain seems to interpret what it is seeing.
+		~\cite{szeliski2010computer}.  More specifically this work will need to understand the interpretation of an image in 
+		the Numpy/OpenCV environment.
+		
+	\subsection{Illumination Normalization}
+		Apart from my main aim to verify Faces in images there are certain other considerations to note.  Before I can start 
+		to verify faces in images I would need to normalize those images.  Normalizing with respect to image processing is the 
+		act of taking images of varying lighting, orientation and alignment and converting them into a semi-consistent form
+		~\cite{FDGFN2009}.  \\
+		
+		Not only will I need to normalise a face but also combine clusters of faces, either finding the best face to use or 
+		normalize each face cluster into a single image in an attempt to create an \emph{Average face} for an individual.  
+		Another method of using multiple images is to individually normalize and score them all and see whom the majority 
+		are classified as.
+		
+	\subsection{Global/Greedy Optimisation}
+		This work made use of OpenCV's eigenface algorithm which makes use of a greedy best pick algorithm.  Such a greedy 
+		technique takes a probe face, scores it against all training data and reports on the best match it got, less accurate 
+		than other methods but fast. \\
+		
+		In this work it would be an interesting idea to compare greedy and global based optimising techniques.  A global technique 
+		would try find the best fitting of faces such that we have the lowest possible scores linking each face~\cite{GlOP1989}.  
+		This would imply we would achieve higher accuracy but possibly a more computationally expensive system.  \\
+		
+		Clearly a classroom environment where we have a set class-list and know that we should have those students present lends 
+		itself nicely to a global optimisation scoring system.  Comparing them would highlight if performing such an optimisation
+		provides clear benefits over the in-built greedy match in terms of accuracy at the cost of complexity to implement and 
+		computation time. \\
+		
+		This work explores a global match optimisation idea in chapter four,  but we were not able to implement such a system due to constraints 
+		that will be discussed later.
